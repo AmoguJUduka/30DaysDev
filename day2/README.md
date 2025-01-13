@@ -19,6 +19,9 @@ This project is an alert system that sends real-time NBA game day score notifica
 - **IAM Security**:
   - Least privilege policies for Lambda, SNS, and EventBridge.
 
+## **Technical Architecture**
+![nba_API](https://drive.google.com/file/d/10FoU6zPL_Uki7kTm1ewZkk55oPM5YGgA/view?usp=drive_link)
+
 ---
 
 ## **Project Structure**
@@ -42,13 +45,7 @@ game-day-notifications/
 
 
 
----
 
-## **Technical Architecture**
-![nba_API](https://drive.google.com/file/d/10FoU6zPL_Uki7kTm1ewZkk55oPM5YGgA/view?usp=drive_link)
-
-
----
 
 
 
