@@ -34,6 +34,12 @@ S3: s3:CreateBucket, s3:PutObject, s3:DeleteBucket, s3:ListBucket
 Glue: glue:CreateDatabase, glue:CreateTable, glue:DeleteDatabase, glue:DeleteTable
 Athena: athena:StartQueryExecution, athena:GetQueryResults
 
+
+## **Technical Architecture**
+![NBA Players Architecture](NBAPlayersActiveDiagram.png)
+
+
+
 # START HERE 
 # Step 1: Open CloudShell Console
 
@@ -68,7 +74,7 @@ nano .env
 2. paste the following line of code into your file, ensure you swap out with your API key
 ```bash
 SPORTS_DATA_API_KEY=your_sportsdata_api_key
-NBA_ENDPOINT=https://api.sportsdata.io/v3/nba/scores/json/Players
+NBA_ENDPOINT="https://api.sportsdata.io/v3/nba/scores/json/Players"
 ```
 
 3. Press ^X to exit, press Y to save the file, press enter to confirm the file name 
@@ -104,14 +110,20 @@ WHERE Position = 'PG';
 -Click Run
 -You should see an output if you scroll down under "Query Results"
 
-### **What We Learned**
+### **What I Learned**
 1. Securing AWS services with least privilege IAM policies.
 2. Automating the creation of services with a script.
 3. Integrating external APIs into cloud-based workflows.
+
+### **Issues I encountered**
+I had a problem with the NBA Endpoint. This was resolved by using the "export" command to make the environment variable available to child processes of the current shell. This means that any program or script executed from the shell will have access to both the "NBA_ENDPOINT" and "SPORTS_DATA_API_KEY"
+
+
 
 
 ### **Future Enhancements**
 1. Automate data ingestion with AWS Lambda
 2. Implement a data transformation layer with AWS Glue ETL
 3. Add advanced analytics and visualizations (AWS QuickSight)
+
 
