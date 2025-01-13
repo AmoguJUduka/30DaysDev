@@ -22,6 +22,16 @@ This project is an alert system that sends real-time NBA game day score notifica
 ## **Technical Architecture**
 ![NBA Notifications Diagram](NBA%20Notifications%20Diagram.png)
 
+
+### **Issues I had**
+1. Obtained a timeout error for my lambda function. It was initially set at a default value of 3 seconds. However, the python script took more than 3 seconds to run the python script. It was resolved by further increasing the time to 10 seconds.
+
+### **What I Learned**
+1. Designing of a notification system with AWS SNS and Lambda.
+2. Securing AWS services with least privilege IAM policies (IAM Roles and trust policy).
+3. Automating workflows using EventBridge.
+4. Integrating external APIs into cloud-based workflows.
+
 ---
 
 ## **Project Structure**
@@ -36,24 +46,7 @@ game-day-notifications/
 ├── .gitignore
 └── README.md                        # Project documentation
 
-### **What We Learned**
-1. Designing a notification system with AWS SNS and Lambda.
-2. Securing AWS services with least privilege IAM policies.
-3. Automating workflows using EventBridge.
-4. Integrating external APIs into cloud-based workflows.
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-### **Issues I had**
-1. Obtained a timeout error for my lambda function. It was initially set at a default value of 3 seconds. However, the python script took more than 3 seconds to run the python script. It was resolved by further increasing the time to 10 seconds
