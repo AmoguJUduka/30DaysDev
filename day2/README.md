@@ -39,8 +39,10 @@ game-day-notifications/
 3. Automating workflows using EventBridge.
 4. Integrating external APIs into cloud-based workflows.
 
+---
 ## **Technical Architecture**
 ![nba_API](https://drive.google.com/file/d/10FoU6zPL_Uki7kTm1ewZkk55oPM5YGgA/view?usp=drive_link)
+---
 
 ### **Issues I had**
 1. Obtained a timeout error for my lambda function. It was initially set at a default value of 3 seconds. However, the python script took more than 3 seconds to run the python script. It was resolved by further increasing the time to 10 seconds
