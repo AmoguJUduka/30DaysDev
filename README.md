@@ -22,11 +22,11 @@ Each folder represents a project or milestone completed during the challenge, co
    ```bash
    git clone https://github.com/your-username/30-days-devops-aws.git
 
-##Prerequisites
+## Prerequisites
 - Basic knowledge of AWS and DevOps principles.
 - An active AWS account for hands-on exercises.
 
-##Contributions
+## Contributions
 This repository is a personal learning journey, but feedback and suggestions are always welcome! Feel free to open issues or submit pull requests.
 
 Happy learning and building! 🚀
